@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wait Cursor Test</title>
+  <style>
+    body {
+      cursor: wait;
+      background-color:#07203d;
+    }
+  </style>
+</head>
+<body>
+  <h1>Testing Wait Cursor in Chrome</h1>
+  <script>
+    // Force Chrome to show wait cursor for 5 seconds
+    document.body.style.cursor = 'wait';
+    setTimeout(() => {
+      document.body.style.cursor = 'default';
+    }, 5000);
+  </script>
+</body>
+</html>
